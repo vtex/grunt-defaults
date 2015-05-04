@@ -3,11 +3,6 @@ module.exports = (pkg, options = {}) ->
   connect:
     options:
       port: options.port ? 8000
-    dist:
-      options:
-        open: 'http://localhost:<%= connect.options.port %>/'
-        keepalive: true
-        base: pkg.dist
     examples:
       options:
         open: 'http://localhost:<%= connect.options.port %>/examples/'
