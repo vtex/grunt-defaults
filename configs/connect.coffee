@@ -7,7 +7,7 @@ module.exports = (pkg, options = {}) ->
       options:
         open: 'http://localhost:<%= connect.options.port %>/'
         keepalive: true
-        base: pkg.deploy
+        base: pkg.dist
     examples:
       options:
         open: 'http://localhost:<%= connect.options.port %>/examples/'

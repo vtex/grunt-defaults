@@ -4,5 +4,5 @@ module.exports = (pkg) ->
     dist:
       files: [{
         dot: true
-        src: [ pkg.deploy ]
+        src: [ pkg.dist ]
       }]
