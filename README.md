@@ -4,7 +4,7 @@ A Grunt convention-over-configuration meta-project.
 
 ## Usage
 
-Add `grunt-defaults` as a dependency on your project:
+Add `@vtex/grunt-defaults` as a dependency on your project:
 
     npm i --save-dev @vtex/grunt-defaults
 
@@ -13,7 +13,7 @@ Each file in `configs/` exports a function that returns some piece of grunt conf
 Use them to build the config object in your `Gruntfile`:
 
 ```
-defaults = require 'grunt-defaults'
+defaults = require '@vtex/grunt-defaults'
 _ = require 'underscore'
 
 module.exports = (grunt) ->
@@ -34,7 +34,7 @@ module.exports = (grunt) ->
     default: ['open:dev', 'webpack-dev-server']
 
   grunt.config.init config
-  require('load-grunt-tasks')(grunt, {pattern: ['grunt-*', '!grunt-defaults']})
+  require('load-grunt-tasks')(grunt, {pattern: ['grunt-*']})
   grunt.registerTask taskName, taskArray for taskName, taskArray of tasks
 
 ```
