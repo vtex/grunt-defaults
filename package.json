@@ -1,0 +1,22 @@
+{
+  "name": "grunt-defaults",
+  "version": "0.1.0",
+  "readmeFilename": "README.md",
+  "description": "Grunt config mixins",
+  "main": "index.coffee",
+  "dependencies": {
+    "color": "^0.7.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vtex/grunt-defaults.git"
+  },
+  "keywords": [
+    "grunt",
+    "webpack"
+  ],
+  "contributors": [
+    "Guilherme Rodrigues <gadr90@gmail.com>"
+  ],
+  "license": "MIT"
+}
