@@ -1,5 +1,5 @@
 {
-  "name": "grunt-defaults",
+  "name": "@vtex/grunt-defaults",
   "version": "0.1.0",
   "readmeFilename": "README.md",
   "description": "Grunt config mixins",
