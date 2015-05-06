@@ -1,6 +1,6 @@
 {
   "name": "@vtex/grunt-defaults",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "readmeFilename": "README.md",
   "description": "Grunt config mixins",
   "main": "index.coffee",
