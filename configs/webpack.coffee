@@ -1,9 +1,11 @@
 path = require 'path'
-distConfig = require path.join(process.cwd(), 'webpack.dist.config.js')
-devConfig = require path.join(process.cwd(), 'webpack.config.js')
 
 module.exports = (pkg, options = {}) ->
   console.log 'grunt-vtex >'.yellow, 'webpack'.cyan
+
+  distConfig = options.distConfig ? require path.join(process.cwd(), 'webpack.dist.config.js')
+  devConfig = options.devConfig ? require path.join(process.cwd(), 'webpack.config.js')
+
   webpack:
     options: distConfig
     dist:
